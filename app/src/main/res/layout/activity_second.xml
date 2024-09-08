@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".second_activity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="210dp"
+
+        android:layout_height="56dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/selecter"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+
+        android:layout_marginTop="216dp"
+        android:height="40dp"
+        android:background="@drawable/button_style"
+        android:hint="@string/enter_number"
+        android:inputType="numberDecimal"
+
+        android:padding="10dp"
+        android:textColorHint="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="145dp"
+
+        android:layout_height="21dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="11dp"
+
+        android:text="Из"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="12dp"
+
+        android:layout_height="21dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="11dp"
+
+        android:text="В"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/number" />
+
+    <Spinner
+        android:id="@+id/fist_spinner"
+        android:layout_width="145dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="33dp"
+        android:background="@drawable/button_style"
+        app:layout_constraintEnd_toStartOf="@+id/second_spinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Spinner
+        android:id="@+id/second_spinner"
+        android:layout_width="145dp"
+        android:layout_height="40dp"
+
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="44dp"
+        android:background="@drawable/button_style"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fist_spinner"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+
+        android:layout_marginTop="450dp"
+        android:background="@drawable/button_style"
+        android:padding="7dp"
+        android:text="Результат"
+        android:textColor="@color/gray"
+
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/calcButton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_enter_style"
+        android:text="@string/calc"
+        android:textSize="18dp"
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

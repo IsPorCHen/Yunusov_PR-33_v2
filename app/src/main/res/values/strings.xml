@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">YunusovRA_PR-33_02</string>
+    <string name="converter_text">Конвертер единиц информации</string>
+    <string name="start">Начать</string>
+    <string name="selecter">Выбор единиц информации</string>
+    <string name="calc">Вычислить</string>
+    <string name="enter_number">Введите число</string>
+    <string name="converter">Конвертер единиц информации</string>
+    <string name="reg">Регистрация</string>
+    <string name="nuber">Введеное число</string>
+    <string name="enter_login">Введите логин</string>
+    <string-array name="spinner_select">
+        <item>байт</item>
+        <item>килобайт</item>
+        <item>мегабайт</item>
+        <item>гигабайт</item>
+    </string-array>
+</resources>
